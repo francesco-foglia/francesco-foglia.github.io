@@ -42,17 +42,19 @@ body {
 header {
   background-color: var(--primary-color);
   color: white;
-  width: 100%;
+  height: 4rem;
   position: fixed;
   top: 0;
-  z-index: 2;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  height: 100%;
 }
 
 nav a {
@@ -79,12 +81,9 @@ nav a:hover {
 }
 
 main.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   min-height: 100vh;
-  z-index: 1;
+  margin-top: 4rem;
   background-image: url("../img/bg-section.jpg");
   background-size: cover;
   background-position: center;
@@ -95,6 +94,7 @@ section {
   min-height: 100vh;
   display: flex;
   background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
 }
 
 section div {
@@ -130,4 +130,26 @@ h2 {
 
 .role:hover {
   color: white;
+}
+
+#skills-container,
+#contacts-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skill,
+.contact {
+  width: 5rem;
+  margin: 2rem;
+  filter: drop-shadow(2px 2px 2px black);
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  filter: invert(96%) sepia(96%) saturate(0%) hue-rotate(90deg) brightness(104%) contrast(104%);
 }
