@@ -1,8 +1,39 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* General settings */
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-regular.ttf");
+  src: url("../fonts/montserrat-semibold.ttf");
+  src: url("../fonts/montserrat-bold.ttf");
 }
+
+:root {
+  --primary-color: #001632;
+  --secondary-color: goldenrod;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.5rem grey;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: 0.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
 
 header {
   background-color: #333;
