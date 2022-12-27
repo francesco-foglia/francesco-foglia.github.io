@@ -78,40 +78,27 @@ nav a:hover {
   filter: invert(96%) sepia(96%) saturate(0%) hue-rotate(90deg) brightness(104%) contrast(104%);
 }
 
-main {
-  width: 100%;
-  min-height: 100vh;
-}
-
-.overlay {
+main.overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
+  background-image: url("../img/bg-section.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 section {
   min-height: 100vh;
   display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 section div {
   margin: auto;
-}
-
-section:first-child {
-  /* background-color: #f1f1f1; */
-}
-
-section:nth-child(2) {
-  /* background-color: #e1e1e1; */
-}
-
-section:nth-child(3) {
-  /* background-color: #d1d1d1; */
 }
 
 h1,
