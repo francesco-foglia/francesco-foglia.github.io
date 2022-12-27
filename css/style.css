@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+}
+
+main {
+  min-height: 100vh;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+}
+
+section div {
+  margin: auto;
+}
+
+section:first-child {
+  background-color: #f1f1f1;
+}
+
+section:nth-child(2) {
+  background-color: #e1e1e1;
+}
+
+section:nth-child(3) {
+  background-color: #d1d1d1;
+}
