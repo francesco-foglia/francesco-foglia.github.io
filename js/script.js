@@ -57,6 +57,8 @@ const contactsArray = [
   }
 ];
 
+const button = document.getElementById("scroll-to-top");
+
 
 // Dynamically create the navbar.
 navLinks.forEach((link) => {
@@ -66,7 +68,7 @@ navLinks.forEach((link) => {
       data-aos="zoom-out"
       data-aos-duration="1500"
       href="#${link}"
-      >
+     >
       <span class="d-none d-md-block">${link}</span>
       <img class="d-block d-md-none icon" src="img/${link}.svg" alt="${link}">
     </a>`;
@@ -101,3 +103,19 @@ contactsArray.forEach((contact) => {
       >
     </a>`;
 });
+
+
+// When the user scrolls down 100px from the top of the document, show the button.
+window.onscroll = () => {
+  if (document.documentElement.scrollTop > 100) {
+    button.classList.add("button-transform");
+  } else {
+    button.classList.remove("button-transform");
+  }
+}
+
+
+// When the user clicks on the button, scroll to the top of the document.
+button.onclick = () => {
+  document.documentElement.scrollTop = 0;
+}
