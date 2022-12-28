@@ -64,12 +64,11 @@ const button = document.getElementById("scroll-to-top");
 navLinks.forEach((link) => {
   navbar.innerHTML +=
     `<a
-      class="hvr-underline-from-center"
       data-aos="zoom-out"
-      data-aos-duration="1500"
+      data-aos-delay="100"
       href="#${link}"
      >
-      <span class="d-none d-md-block">${link}</span>
+      <span class="d-none d-md-block hvr-underline-from-center">${link}</span>
       <img class="d-block d-md-none icon" src="img/${link}.svg" alt="${link}">
     </a>`;
 });
@@ -82,7 +81,7 @@ skillsArray.forEach((skill) => {
       <img
         class="skill hvr-bob"
         data-aos="zoom-out"
-        data-aos-duration="1500"
+        data-aos-delay="100"
         src="img/skills/${skill.name}.png"
         alt="${skill.name}"
       >
@@ -97,7 +96,7 @@ contactsArray.forEach((contact) => {
       <img
         class="contact hvr-bob"
         data-aos="zoom-out"
-        data-aos-duration="1500"
+        data-aos-delay="100"
         src="img/contacts/${contact.name}.png"
         alt="${contact.name}"
       >

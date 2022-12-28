@@ -65,7 +65,7 @@ nav a {
   font-weight: bold;
   font-style: italic;
   letter-spacing: 0.1rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 0 0.2rem;
 }
 
@@ -75,10 +75,13 @@ nav a:hover {
 }
 
 .icon {
-  width: 2rem;
-  height: 2rem;
-  margin-bottom: 0.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
   filter: invert(96%) sepia(96%) saturate(0%) hue-rotate(90deg) brightness(104%) contrast(104%);
+}
+
+.icon:hover {
+  filter: invert(67%) sepia(47%) saturate(697%) hue-rotate(3deg) brightness(92%) contrast(92%);
 }
 
 /* Main */
@@ -147,13 +150,6 @@ h2 {
   width: 5rem;
   margin: 2rem;
   filter: drop-shadow(2px 2px 2px black);
-}
-
-.icon {
-  width: 2rem;
-  height: 2rem;
-  margin-bottom: 0.5rem;
-  filter: invert(96%) sepia(96%) saturate(0%) hue-rotate(90deg) brightness(104%) contrast(104%);
 }
 
 /* Scroll to top button */
