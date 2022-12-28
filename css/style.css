@@ -9,6 +9,7 @@
 :root {
   --primary-color: #001632;
   --secondary-color: goldenrod;
+  --tertiary-color: white;
 }
 
 ::-webkit-scrollbar {
@@ -37,12 +38,21 @@ body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
+  color: var(--tertiary-color);
+}
+
+a {
+  color: var(--tertiary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--tertiary-color);
 }
 
 /* Header  */
 header {
   background-color: var(--primary-color);
-  color: white;
   height: 4rem;
   position: fixed;
   top: 0;
@@ -59,19 +69,12 @@ nav {
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   font-style: italic;
   letter-spacing: 0.1rem;
   font-size: 1.3rem;
   padding: 0 0.2rem;
-}
-
-nav a:hover {
-  color: white;
-  /* box-shadow: 0 0.2rem 0 0 var(--secondary-color); */
 }
 
 .icon {
@@ -89,7 +92,7 @@ main {
   width: 100%;
   min-height: 100vh;
   margin-top: 4rem;
-  background-image: url("../img/bg-section.jpg");
+  background-image: url("../img/bg-main.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -108,7 +111,6 @@ section div {
 
 h1,
 h2 {
-  color: white;
   text-shadow: 2px 2px var(--primary-color);
   font-weight: 800 !important;
   font-style: italic;
@@ -121,20 +123,10 @@ h2 {
 h2 {
   color: var(--secondary-color);
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 .name:hover {
   color: var(--secondary-color);
-}
-
-.role {
-  color: white;
-  text-decoration: none;
-}
-
-.role:hover {
-  color: white;
 }
 
 #skills-container,
