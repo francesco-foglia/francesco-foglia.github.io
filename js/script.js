@@ -69,7 +69,7 @@ navLinks.forEach((link) => {
       href="#${link}"
      >
       <span class="d-none d-md-block hvr-underline-from-center">${link}</span>
-      <img class="d-block d-md-none icon" src="img/${link}.svg" alt="${link}">
+      <img class="d-block d-md-none icon" src="img/nav-icons/${link}.svg" alt="${link}">
     </a>`;
 });
 

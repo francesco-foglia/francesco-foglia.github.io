@@ -1,10 +1,9 @@
 /* General settings */
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/montserrat-regular.ttf");
-  src: url("../fonts/montserrat-semibold.ttf");
-  src: url("../fonts/montserrat-bold.ttf");
+  src: url("../fonts/montserrat/Montserrat-Bold.ttf") format("truetype");
 }
+
 
 :root {
   --primary-color: #001632;
@@ -36,8 +35,8 @@ body {
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
+  font-style: italic;
   color: var(--tertiary-color);
 }
 
@@ -59,6 +58,7 @@ header {
   left: 0;
   right: 0;
   z-index: 100;
+  box-shadow: 0 0 1px 0 var(--secondary-color);
 }
 
 nav {
@@ -70,8 +70,6 @@ nav {
 
 nav a {
   text-transform: uppercase;
-  font-weight: bold;
-  font-style: italic;
   letter-spacing: 0.1rem;
   font-size: 1.3rem;
   padding: 0 0.2rem;
@@ -101,7 +99,7 @@ main {
 section {
   min-height: 100vh;
   display: flex;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 2rem;
 }
 
@@ -112,8 +110,6 @@ section div {
 h1,
 h2 {
   text-shadow: 2px 2px var(--primary-color);
-  font-weight: 800 !important;
-  font-style: italic;
   letter-spacing: 0.1rem;
   line-height: 2;
   text-align: center;
