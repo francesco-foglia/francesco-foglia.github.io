@@ -52,7 +52,7 @@ const contactsArray = [
     url: "https://github.com/francesco-foglia",
   },
   {
-    name: "email",
+    name: "gmail",
     url: "mailto:francescofogliajj@gmail.com",
   }
 ];
@@ -83,7 +83,7 @@ skillsArray.forEach((skill) => {
         data-aos="zoom-out"
         data-aos-delay="100"
         src="img/skills/${skill.name}.png"
-        alt="${skill.name}"
+        alt="${skill.name} logo"
       >
     </a>`;
 });
@@ -98,7 +98,7 @@ contactsArray.forEach((contact) => {
         data-aos="zoom-out"
         data-aos-delay="100"
         src="img/contacts/${contact.name}.png"
-        alt="${contact.name}"
+        alt="${contact.name} logo"
       >
     </a>`;
 });
