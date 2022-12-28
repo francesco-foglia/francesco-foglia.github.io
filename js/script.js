@@ -12,11 +12,11 @@ const skills = document.getElementById("skills-container");
 const skillsArray = [
   {
     name: "html",
-    url: "https://www.w3schools.com/html/default.asp"
+    url: "https://html.spec.whatwg.org"
   },
   {
     name: "css",
-    url: "https://www.w3schools.com/css/default.asp"
+    url: "https://www.w3.org/TR/CSS"
   },
   {
     name: "sass",
@@ -28,7 +28,7 @@ const skillsArray = [
   },
   {
     name: "javascript",
-    url: "https://www.w3schools.com/js/default.asp"
+    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
   },
   {
     name: "jquery",

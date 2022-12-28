@@ -72,7 +72,10 @@ nav a {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-size: 1.3rem;
-  padding: 0 0.2rem;
+}
+
+nav a span {
+  padding-right: 0.15rem;
 }
 
 .icon {
@@ -111,7 +114,7 @@ h1,
 h2 {
   text-shadow: 2px 2px var(--primary-color);
   letter-spacing: 0.1rem;
-  line-height: 2;
+  line-height: 2.5 !important;
   text-align: center;
 }
 
