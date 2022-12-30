@@ -64,7 +64,7 @@ const button = document.getElementById("scroll-to-top");
 navLinks.forEach((link) => {
   navbar.innerHTML +=
     `<a
-      data-aos="zoom-out"
+      data-aos=""
       data-aos-delay="100"
       href="#${link}"
      >

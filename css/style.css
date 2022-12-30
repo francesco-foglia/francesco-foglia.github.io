@@ -55,10 +55,18 @@ header {
   height: 4rem;
   position: fixed;
   top: 0;
+  bottom: unset;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 1;
   box-shadow: 0 0 1px 0 var(--secondary-color);
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    bottom: 0;
+    top: unset;
+  }
 }
 
 nav {
@@ -90,13 +98,11 @@ nav a span {
 
 /* Main */
 main {
-  width: 100%;
-  min-height: 100vh;
-  margin-top: 4rem;
   background-image: url("../img/bg-main.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 section {
