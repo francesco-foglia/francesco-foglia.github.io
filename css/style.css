@@ -120,8 +120,16 @@ h1,
 h2 {
   text-shadow: 2px 2px var(--primary-color);
   letter-spacing: 0.1rem;
-  line-height: 2.5 !important;
   text-align: center;
+}
+
+h1 .name {
+  line-height: 3.5rem !important;
+}
+
+h1 a,
+h1 span {
+  line-height: 3rem !important;
 }
 
 .name,

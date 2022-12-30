@@ -4,9 +4,9 @@ Project realized for the master in Front End Development of [start2impact](https
 
 ## Technologies
 
-* [HTML](https://www.w3schools.com/html/default.asp)
-* [CSS](https://www.w3schools.com/css/default.asp)
-* [JavaScript](https://www.w3schools.com/js/default.asp)
+* [HTML](https://html.spec.whatwg.org)
+* [CSS](https://www.w3.org/TR/CSS)
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ## Resources
 
