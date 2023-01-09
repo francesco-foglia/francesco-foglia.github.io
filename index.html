@@ -29,17 +29,36 @@
 <body>
 
   <!-- Header -->
-  <header class="container-fluid">
-    <nav id="navbar" class="container">
+  <header>
+    <div class="header-md container-fluid d-none d-md-block">
+      <nav id="navbar" class="container">
+        <!-- Navigation links rendered with JavaScript -->
+      </nav>
+    </div>
+
+    <!-- Button to open the navigation menu on mobile -->
+    <div class="d-block d-md-none">
+      <button id="openbtn">
+        <img src="img/bars.svg" alt="Bars">
+      </button>
+    </div>
+
+    <!-- Navigation menu on mobile -->
+    <aside id="aside" class="">
+      <!-- Button to close the navigation menu on mobile -->
+      <a href="javascript:void(0)" id="closebtn">
+        <img src="img/xmark.svg" alt="Xmark">
+      </a>
+
       <!-- Navigation links rendered with JavaScript -->
-    </nav>
+    </aside>
   </header>
 
   <!-- Main -->
   <main class="container-fluid px-0">
     <!-- Developer -->
     <section id="developer" class="py-5">
-      <div class="pb-5 py-md-5">
+      <div class="pt-md-5">
         <h1 data-aos="zoom-out" data-aos-delay="100">
           <a href="#contacts" class="display-4 mb-5 name hvr-float">Francesco Foglia</a> <br>
           <a href="#skills" class="mb-5 hvr-float">Front End Developer</a> <br>
@@ -49,7 +68,7 @@
     </section>
     <!-- Skills -->
     <section id="skills" class="py-5">
-      <div class="pb-5 py-md-5">
+      <div class="pt-md-5">
         <h2 class="display-4 mb-5" data-aos="zoom-out" data-aos-delay="100">
           Skills
         </h2>
@@ -60,7 +79,7 @@
     </section>
     <!-- Contacts -->
     <section id="contacts" class="py-5">
-      <div class="pb-5 py-md-5">
+      <div class="pt-md-5">
         <h2 class="display-4 mb-5" data-aos="zoom-out" data-aos-delay="100">
           Contacts
         </h2>
@@ -72,7 +91,7 @@
   </main>
 
   <!-- Scroll to top button -->
-  <button id="scroll-to-top">
+  <button id="scroll-to-top" class="">
     <img src="img/chevron-up.svg" alt="Chevron up">
   </button>
 

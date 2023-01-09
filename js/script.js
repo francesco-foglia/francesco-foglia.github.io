@@ -57,7 +57,7 @@ const contactsArray = [
   }
 ];
 
-const button = document.getElementById("scroll-to-top");
+const scrollToTop = document.getElementById("scroll-to-top");
 
 
 // Dynamically create the navbar.
@@ -66,6 +66,7 @@ navLinks.forEach((link) => {
     `<a
       data-aos=""
       data-aos-delay="100"
+      class="link-style"
       href="#${link}"
      >
       <span class="d-none d-md-block hvr-underline-from-center">${link}</span>
@@ -107,14 +108,58 @@ contactsArray.forEach((contact) => {
 // When the user scrolls down 100px from the top of the document, show the button.
 window.onscroll = () => {
   if (document.documentElement.scrollTop > 100) {
-    button.classList.add("button-transform");
+    scrollToTop.classList.add("scroll-to-top-transform");
   } else {
-    button.classList.remove("button-transform");
+    scrollToTop.classList.remove("scroll-to-top-transform");
   }
 }
 
+// If the page is already scrolled down 100px from the top of the document, show the button.
+if (document.documentElement.scrollTop > 100) {
+  scrollToTop.classList.add("scroll-to-top-transform");
+}
 
 // When the user clicks on the button, scroll to the top of the document.
-button.onclick = () => {
+scrollToTop.onclick = () => {
   document.documentElement.scrollTop = 0;
 }
+
+
+// Create constants to store HTML elements for the Navigation menu on mobile (aside).
+const html = document.querySelector("html");
+const aside = document.getElementById("aside");
+const openbtn = document.getElementById("openbtn");
+const closebtn = document.getElementById("closebtn");
+
+// Open and close the Navigation menu on mobile (aside).
+openbtn.addEventListener("click", () => {
+  aside.classList.add("aside-with");
+  html.classList.add("html-overflow");
+});
+
+closebtn.addEventListener("click", () => {
+  aside.classList.remove("aside-with");
+  html.classList.remove("html-overflow");
+});
+
+// Dynamically create the Navigation menu on mobile (aside).
+navLinks.forEach((link) => {
+  aside.innerHTML += `<a class="link-style" href="#${link}">${link}</a>`;
+
+  const asideLink = document.querySelectorAll("aside a");
+
+  asideLink.forEach((link) => {
+    link.addEventListener("click", () => {
+      aside.classList.remove("aside-with");
+      html.classList.remove("html-overflow");
+    });
+  });
+});
+
+// On resize, if the window is bigger than 768px, remove the Navigation menu on mobile (aside).
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768) {
+    aside.classList.remove("aside-with");
+    html.classList.remove("html-overflow");
+  }
+});
