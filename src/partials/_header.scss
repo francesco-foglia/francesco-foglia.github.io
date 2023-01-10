@@ -1,0 +1,39 @@
+/* Header  */
+.header-md {
+  background-color: var(--primary-color);
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  bottom: unset;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  box-shadow: 0 0 1px 0 var(--secondary-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.link-style {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1.3rem;
+}
+
+nav a span {
+  padding-right: 0.15rem;
+}
+
+.icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  filter: invert(96%) sepia(96%) saturate(0%) hue-rotate(90deg) brightness(104%) contrast(104%);
+}
+
+.icon:hover {
+  filter: invert(67%) sepia(47%) saturate(697%) hue-rotate(3deg) brightness(92%) contrast(92%);
+}

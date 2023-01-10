@@ -1,0 +1,60 @@
+/* Main */
+main {
+  background-image: url("../img/bg-main.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+}
+
+section div {
+  margin: auto;
+}
+
+h1,
+h2 {
+  text-shadow: 2px 2px var(--primary-color);
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+h1 .name {
+  line-height: 3.5rem !important;
+}
+
+h1 a,
+h1 span {
+  line-height: 3rem !important;
+}
+
+.name,
+h2 {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+}
+
+.name:hover {
+  color: var(--secondary-color);
+}
+
+#skills-container,
+#contacts-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skill,
+.contact {
+  width: 5rem;
+  margin: 2rem;
+  filter: drop-shadow(2px 2px 2px black);
+}
