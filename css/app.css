@@ -217,6 +217,27 @@ h2 {
   filter: drop-shadow(2px 2px 2px black);
 }
 
+footer {
+  min-height: 4rem;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 1px 0 var(--secondary-color);
+}
+
+#footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  #footer-nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 /* Scroll to top button */
 #scroll-to-top {
   width: 3rem;

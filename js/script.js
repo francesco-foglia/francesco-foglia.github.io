@@ -163,3 +163,14 @@ window.addEventListener("resize", () => {
     html.classList.remove("html-overflow");
   }
 });
+
+
+// Dynamically create the footer.
+const footerNav = document.getElementById("footer-nav");
+navLinks.forEach((link) => {
+  footerNav.innerHTML += `
+    <a class="link-style m-3" href="#${link}">
+      <span class="hvr-underline-from-center">${link}</span>
+    </a>
+  `;
+});
