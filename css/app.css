@@ -29,6 +29,8 @@ body {
   font-weight: bold;
   font-style: italic;
   color: white;
+  text-shadow: 1.5px 1.5px 1.5px #001632;
+  letter-spacing: 0.1rem;
 }
 
 a {
@@ -40,47 +42,47 @@ a:hover {
   color: white;
 }
 
+.min-height-dev,
 .min-height {
   min-height: 100vh;
 }
 
+@media screen and (max-width: 768px) {
+  .min-height {
+    min-height: 100%;
+  }
+}
+h1,
+h2 {
+  text-align: center;
+}
+
 .header-md {
-  background-color: #001632;
   height: 4rem;
+  background-color: #001632;
+  box-shadow: 0 0 1px 0 goldenrod;
   position: fixed;
   top: 0;
   bottom: unset;
   left: 0;
   right: 0;
   z-index: 1;
-  box-shadow: 0 0 1px 0 goldenrod;
 }
 
-nav {
+#header-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
 }
 
-.link-style {
+#header-nav a {
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
   font-size: 1.3rem;
 }
 
-nav a span {
+#header-nav a span {
   padding-right: 0.15rem;
-}
-
-.icon {
-  width: 1.8rem;
-  height: 1.8rem;
-  filter: invert(96%) sepia(96%) saturate(0%) hue-rotate(90deg) brightness(104%) contrast(104%);
-}
-
-.icon:hover {
-  filter: invert(67%) sepia(47%) saturate(697%) hue-rotate(3deg) brightness(92%) contrast(92%);
 }
 
 #openbtn {
@@ -132,6 +134,11 @@ nav a span {
     width: 100% !important;
   }
 }
+#aside a {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
 #closebtn img {
   width: 1.1rem;
 }
@@ -151,27 +158,31 @@ nav a span {
   right: 1.5rem;
 }
 
-#developer {
+#developer,
+#skills,
+#contacts {
   min-height: 100vh;
-  background-image: url("../img/bg-odd.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
-#developer .overlay {
+#developer .overlay,
+#skills .overlay,
+#contacts .overlay {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+#developer {
+  background-image: url("../img/bg-odd.jpg");
+}
 #developer .overlay h1 {
   line-height: 3rem !important;
-  letter-spacing: 0.1rem;
-  text-align: center;
 }
 #developer .overlay h1 a:first-child {
   line-height: 3rem !important;
   text-transform: uppercase;
-  text-shadow: 2px 2px #001632;
   color: goldenrod;
 }
 #developer .overlay h1 a:first-child:hover {
@@ -179,7 +190,6 @@ nav a span {
 }
 #developer .overlay h1 a:nth-child(2) {
   line-height: 3rem !important;
-  text-shadow: 2px 2px #001632;
   color: white;
 }
 #developer .overlay h1 a:nth-child(2):hover {
@@ -187,28 +197,12 @@ nav a span {
 }
 #developer .overlay h2 {
   line-height: 3rem !important;
-  letter-spacing: 0.1rem;
-  text-align: center;
   text-transform: capitalize;
   color: white;
-  text-shadow: 2px 2px #001632;
 }
 
 #skills {
-  min-height: 100vh;
   background-image: url("../img/bg-even.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-#skills .overlay {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-#skills .overlay h2 {
-  text-shadow: 2px 2px #001632;
-  text-align: center;
 }
 #skills .overlay #resume {
   display: flex;
@@ -216,7 +210,6 @@ nav a span {
   justify-content: center;
   align-items: flex-start;
   text-align: left;
-  text-shadow: 2px 2px #001632;
 }
 @media screen and (max-width: 768px) {
   #skills .overlay #resume {
@@ -229,37 +222,12 @@ nav a span {
 }
 
 #contacts {
-  min-height: 100vh;
   background-image: url("../img/bg-odd.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-#contacts .overlay {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-#contacts .overlay h2 {
-  text-shadow: 2px 2px #001632;
-  text-align: center;
 }
 #contacts .overlay form label {
   font-size: 1.1rem;
-  letter-spacing: 0.1rem;
-  text-shadow: 2px 2px #001632;
 }
-#contacts .overlay form input {
-  border: 1.5px solid goldenrod;
-  border-radius: 0.5rem;
-  color: #001632;
-  background-color: rgba(255, 255, 255, 0.3);
-  padding: 0.5rem;
-}
-#contacts .overlay form input:focus {
-  outline: none;
-  box-shadow: 0 0 0 0.15rem goldenrod;
-}
+#contacts .overlay form input,
 #contacts .overlay form textarea {
   border: 1.5px solid goldenrod;
   border-radius: 0.5rem;
@@ -268,6 +236,7 @@ nav a span {
   padding: 0.5rem;
   resize: none;
 }
+#contacts .overlay form input:focus,
 #contacts .overlay form textarea:focus {
   outline: none;
   box-shadow: 0 0 0 0.15rem goldenrod;
@@ -278,7 +247,6 @@ nav a span {
   border-radius: 0.5rem;
   color: #001632;
   font-size: 1.1rem;
-  letter-spacing: 0.1rem;
   padding: 0.5rem;
   transition: all 0.3s ease-in-out;
 }
@@ -323,6 +291,15 @@ footer {
     justify-content: center;
   }
 }
+#footer-nav a {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+#footer-nav a span {
+  padding-right: 0.15rem;
+}
+
 #scroll-to-top {
   width: 3rem;
   height: 3rem;

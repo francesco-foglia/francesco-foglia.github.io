@@ -1,11 +1,5 @@
 #scroll-to-top {
-  width: 3rem;
-  height: 3rem;
-  border: none;
-  border-radius: 50%;
-  opacity: 0.9;
-  background-color: $secondaryColor;
-  box-shadow: 0 0 0.2rem $tertiaryColor;
+  @include btn;
   position: fixed;
   bottom: 1.5rem;
   right: 1.5rem;

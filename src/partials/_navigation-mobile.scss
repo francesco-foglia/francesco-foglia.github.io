@@ -1,11 +1,5 @@
 #openbtn {
-  width: 3rem;
-  height: 3rem;
-  border: none;
-  border-radius: 50%;
-  opacity: 0.9;
-  background-color: $secondaryColor;
-  box-shadow: 0 0 0.2rem $tertiaryColor;
+  @include btn;
   position: fixed;
   top: 1.5rem;
   right: 1.5rem;
@@ -49,21 +43,19 @@
   }
 }
 
+#aside a {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
 #closebtn img {
   width: 1.1rem;
 }
 
 #closebtn {
-  width: 3rem;
-  height: 3rem;
-  border: none;
-  border-radius: 50%;
-  opacity: 0.9;
-  background-color: $secondaryColor;
-  box-shadow: 0 0 0.2rem $tertiaryColor;
+  @include btn;
   text-align: center;
   line-height: 3rem;
-
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;

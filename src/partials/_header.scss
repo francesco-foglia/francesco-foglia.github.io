@@ -1,38 +1,28 @@
 .header-md {
-  background-color: $tertiaryColor;
   height: 4rem;
+  background-color: $tertiaryColor;
+  box-shadow: 0 0 1px 0 $secondaryColor;
+
   position: fixed;
   top: 0;
   bottom: unset;
   left: 0;
   right: 0;
   z-index: 1;
-  box-shadow: 0 0 1px 0 $secondaryColor;
 }
 
-nav {
+#header-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
 }
 
-.link-style {
+#header-nav a {
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
   font-size: 1.3rem;
 }
 
-nav a span {
+#header-nav a span {
   padding-right: 0.15rem;
-}
-
-.icon {
-  width: 1.8rem;
-  height: 1.8rem;
-  filter: invert(96%) sepia(96%) saturate(0%) hue-rotate(90deg) brightness(104%) contrast(104%);
-}
-
-.icon:hover {
-  filter: invert(67%) sepia(47%) saturate(697%) hue-rotate(3deg) brightness(92%) contrast(92%);
 }

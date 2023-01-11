@@ -3,7 +3,9 @@ AOS.init();
 
 
 // Create constants to store HTML elements.
-const navbar = document.getElementById("navbar");
+const headerNav = document.getElementById("header-nav");
+
+const footerNav = document.getElementById("footer-nav");
 
 const navLinks = ["developer", "skills", "contacts"];
 
@@ -60,18 +62,23 @@ const contactsArray = [
 const scrollToTop = document.getElementById("scroll-to-top");
 
 
-// Dynamically create the navbar.
+// Dynamically create the Header and Footer Navigation.
 navLinks.forEach((link) => {
-  navbar.innerHTML +=
+  headerNav.innerHTML +=
     `<a
       data-aos=""
       data-aos-delay="100"
-      class="link-style"
       href="#${link}"
      >
       <span class="d-none d-md-block hvr-underline-from-center">${link}</span>
       <img class="d-block d-md-none icon" src="img/nav-icons/${link}.svg" alt="${link}">
     </a>`;
+
+  footerNav.innerHTML += `
+    <a class="m-3" href="#${link}">
+      <span class="hvr-underline-from-center">${link}</span>
+    </a>
+  `;
 });
 
 
@@ -144,7 +151,7 @@ closebtn.addEventListener("click", () => {
 
 // Dynamically create the Navigation menu on mobile (aside).
 navLinks.forEach((link) => {
-  aside.innerHTML += `<a class="link-style" href="#${link}">${link}</a>`;
+  aside.innerHTML += `<a href="#${link}">${link}</a>`;
 
   const asideLink = document.querySelectorAll("aside a");
 
@@ -162,15 +169,4 @@ window.addEventListener("resize", () => {
     aside.classList.remove("aside-with");
     html.classList.remove("html-overflow");
   }
-});
-
-
-// Dynamically create the footer.
-const footerNav = document.getElementById("footer-nav");
-navLinks.forEach((link) => {
-  footerNav.innerHTML += `
-    <a class="link-style m-3" href="#${link}">
-      <span class="hvr-underline-from-center">${link}</span>
-    </a>
-  `;
 });

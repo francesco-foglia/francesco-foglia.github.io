@@ -30,6 +30,8 @@ body {
   font-weight: bold;
   font-style: italic;
   color: $primaryColor;
+  text-shadow: 1.5px 1.5px 1.5px $tertiaryColor;
+  letter-spacing: 0.1rem;
 }
 
 a {
@@ -41,6 +43,18 @@ a:hover {
   color: $primaryColor;
 }
 
+.min-height-dev,
 .min-height {
   min-height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .min-height {
+    min-height: 100%;
+  }
+}
+
+h1,
+h2 {
+  text-align: center;
 }
