@@ -161,19 +161,12 @@ nav a span {
 }
 
 /* Main */
-main {
-  background-image: url("../img/bg-main.jpg");
+#developer {
+  min-height: 100vh;
+  background-image: url("../img/bg-odd.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-
-#developer {
-  min-height: 100vh;
-  background-image: url("../img/developer-section.jpg");
-  background-size: cover;
-  background-position: center;
 }
 #developer .overlay {
   width: 100%;
@@ -213,9 +206,10 @@ main {
 
 #skills {
   min-height: 100vh;
-  background-image: url("../img/skills-section.jpg");
+  background-image: url("../img/bg-even.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 #skills .overlay {
   width: 100%;
@@ -241,6 +235,63 @@ main {
   }
 }
 #skills .overlay #resume h4 {
+  color: var(--secondary-color);
+}
+
+#contacts {
+  min-height: 100vh;
+  background-image: url("../img/bg-odd.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+#contacts .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#contacts .overlay h2 {
+  text-shadow: 2px 2px var(--primary-color);
+  text-align: center;
+}
+#contacts .overlay form label {
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  text-shadow: 2px 2px var(--primary-color);
+}
+#contacts .overlay form input {
+  border: 1.5px solid var(--secondary-color);
+  border-radius: 0.5rem;
+  color: var(--primary-color);
+  padding: 0.5rem;
+}
+#contacts .overlay form input:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.15rem var(--secondary-color);
+}
+#contacts .overlay form textarea {
+  border: 1.5px solid var(--secondary-color);
+  border-radius: 0.5rem;
+  color: var(--primary-color);
+  padding: 0.5rem;
+  resize: none;
+}
+#contacts .overlay form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.15rem var(--secondary-color);
+}
+#contacts .overlay form button {
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+#contacts .overlay form button:hover {
+  background-color: var(--primary-color);
   color: var(--secondary-color);
 }
 
