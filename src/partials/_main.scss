@@ -14,34 +14,42 @@ section {
   padding: 2rem;
 }
 
-section div {
-  margin: auto;
-}
+#developer {
+  h1 {
+    line-height: 3rem !important;
+    letter-spacing: 0.1rem;
+    text-align: center;
 
-h1,
-h2 {
-  text-shadow: 2px 2px var(--primary-color);
-  letter-spacing: 0.1rem;
-  text-align: center;
-}
+    a:first-child {
+      line-height: 3rem !important;
+      text-transform: uppercase;
+      text-shadow: 2px 2px var(--primary-color);
+      color: var(--secondary-color);
 
-h1 .name {
-  line-height: 3.5rem !important;
-}
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
 
-h1 a,
-h1 span {
-  line-height: 3rem !important;
-}
+    a:nth-child(3) {
+      line-height: 3rem !important;
+      text-shadow: 2px 2px var(--primary-color);
+      color: white;
 
-.name,
-h2 {
-  color: var(--secondary-color);
-  text-transform: uppercase;
-}
+      &:hover {
+        color: white;
+      }
+    }
+  }
 
-.name:hover {
-  color: var(--secondary-color);
+  h2 {
+    line-height: 3rem !important;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    text-shadow: 2px 2px var(--primary-color);
+  }
 }
 
 #skills-container,

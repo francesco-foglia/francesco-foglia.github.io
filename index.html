@@ -57,34 +57,86 @@
   <!-- Main -->
   <main class="container-fluid px-0">
     <!-- Developer -->
-    <section id="developer" class="py-5">
-      <div class="pt-md-5">
-        <h1 data-aos="zoom-out" data-aos-delay="100">
-          <a href="#contacts" class="display-4 mb-5 name hvr-float">Francesco Foglia</a> <br>
-          <a href="#skills" class="mb-5 hvr-float">Front End Developer</a> <br>
-          <span>Florence, Italy</span>
-        </h1>
-      </div>
-    </section>
-    <!-- Skills -->
-    <section id="skills" class="py-5">
-      <div class="pt-md-5">
-        <h2 class="display-4 mb-5" data-aos="zoom-out" data-aos-delay="100">
-          Skills
-        </h2>
-        <div id="skills-container">
-          <!-- Skills images rendered with JavaScript -->
+    <section id="developer" class="container-fluid py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex min-height">
+            <div class="m-auto">
+              <h1 data-aos="zoom-out" data-aos-delay="100">
+                <a href="#contacts" class="display-4 mb-5 hvr-float">Francesco Foglia</a> <br>
+                <a href="#skills" class="mb-5 hvr-float">Front End Developer</a> <br>
+              </h1>
+              <h2 data-aos="zoom-out" data-aos-delay="100">
+                <p>Wanna know more about me?</p>
+                <p class="d-none d-md-block">Just click on the links above</p>
+                <p class="d-block d-md-none">Just open the menu above</p>
+                <p>or scroll down the page!</p>
+              </h2>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <!-- Skills -->
+    <section id="skills" class="py-5 row">
+      <div class="pt-md-5 row">
+        <div class="col-md-6">
+          <h2 class="display-4 mb-5" data-aos="zoom-out" data-aos-delay="100">
+            Skills
+          </h2>
+          <div id="skills-container">
+            <!-- Skills images rendered with JavaScript -->
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- a resume with main experiences -->
+          <div id="resume" class="p-5" data-aos="zoom-out" data-aos-delay="100">
+            <h3 class="mb-4">Resume</h3>
+            <div class="mb-3">
+              <h4 class="mb-2">Front End Developer</h4>
+              <p class="mb-0">Freelance</p>
+              <p class="mb-0">2019 - Present</p>
+            </div>
+            <div class="mb-3">
+              <h4 class="mb-2">Front End Developer</h4>
+              <p class="mb-0">Freelance</p>
+              <p class="mb-0">2019 - Present</p>
+            </div>
+            <div class="mb-3">
+              <h4 class="mb-2">Front End Developer</h4>
+              <p class="mb-0">Freelance</p>
+              <p class="mb-0">2019 - Present</p>
+            </div>
+          </div>
+        </div>
+    </section>
     <!-- Contacts -->
-    <section id="contacts" class="py-5">
-      <div class="pt-md-5">
-        <h2 class="display-4 mb-5" data-aos="zoom-out" data-aos-delay="100">
-          Contacts
-        </h2>
-        <div id="contacts-container">
-          <!-- Contacts images rendered with JavaScript -->
+    <section id="contacts" class="py-5 row">
+      <div class="pt-md-5 row">
+        <div class="col-md-6">
+          <h2 class="display-4 mb-5" data-aos="zoom-out" data-aos-delay="100">
+            Contacts
+          </h2>
+          <div id="contacts-container">
+            <!-- Contacts images rendered with JavaScript -->
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- contact form -->
+          <form id="contact-form" class="p-5" data-aos="zoom-out" data-aos-delay="100">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </div>
     </section>
