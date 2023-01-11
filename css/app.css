@@ -169,36 +169,40 @@ main {
   background-repeat: no-repeat;
 }
 
-section {
+#developer {
   min-height: 100vh;
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 2rem;
+  background-image: url("../img/developer-section.jpg");
+  background-size: cover;
+  background-position: center;
 }
-
-#developer h1 {
+#developer .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#developer .overlay h1 {
   line-height: 3rem !important;
   letter-spacing: 0.1rem;
   text-align: center;
 }
-#developer h1 a:first-child {
+#developer .overlay h1 a:first-child {
   line-height: 3rem !important;
   text-transform: uppercase;
   text-shadow: 2px 2px var(--primary-color);
   color: var(--secondary-color);
 }
-#developer h1 a:first-child:hover {
+#developer .overlay h1 a:first-child:hover {
   color: var(--secondary-color);
 }
-#developer h1 a:nth-child(3) {
+#developer .overlay h1 a:nth-child(2) {
   line-height: 3rem !important;
   text-shadow: 2px 2px var(--primary-color);
   color: white;
 }
-#developer h1 a:nth-child(3):hover {
+#developer .overlay h1 a:nth-child(2):hover {
   color: white;
 }
-#developer h2 {
+#developer .overlay h2 {
   line-height: 3rem !important;
   letter-spacing: 0.1rem;
   text-align: center;
