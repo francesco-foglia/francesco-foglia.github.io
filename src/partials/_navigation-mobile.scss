@@ -1,12 +1,11 @@
-/* Navigation menu on mobile (aside) */
 #openbtn {
   width: 3rem;
   height: 3rem;
   border: none;
   border-radius: 50%;
   opacity: 0.9;
-  background-color: var(--secondary-color);
-  box-shadow: 0 0 0.2rem var(--primary-color);
+  background-color: $secondaryColor;
+  box-shadow: 0 0 0.2rem $tertiaryColor;
   position: fixed;
   top: 1.5rem;
   right: 1.5rem;
@@ -34,7 +33,7 @@
   z-index: 2;
   top: 0;
   right: 0;
-  background-color: var(--primary-color);
+  background-color: $tertiaryColor;
   opacity: 0.9;
   overflow-x: hidden;
   transition: 0.5s;
@@ -60,8 +59,8 @@
   border: none;
   border-radius: 50%;
   opacity: 0.9;
-  background-color: var(--secondary-color);
-  box-shadow: 0 0 0.2rem var(--primary-color);
+  background-color: $secondaryColor;
+  box-shadow: 0 0 0.2rem $tertiaryColor;
   text-align: center;
   line-height: 3rem;
 

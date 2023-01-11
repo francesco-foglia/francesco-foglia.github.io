@@ -1,13 +1,6 @@
-/* General settings */
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/montserrat/Montserrat-Bold.ttf") format("truetype");
-}
-
-:root {
-  --primary-color: #001632;
-  --secondary-color: goldenrod;
-  --tertiary-color: white;
 }
 
 ::-webkit-scrollbar {
@@ -19,7 +12,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--secondary-color);
+  background: $secondaryColor;
   border-radius: 0.5rem;
 }
 
@@ -36,16 +29,16 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-style: italic;
-  color: var(--tertiary-color);
+  color: $primaryColor;
 }
 
 a {
-  color: var(--tertiary-color);
+  color: $primaryColor;
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--tertiary-color);
+  color: $primaryColor;
 }
 
 .min-height {

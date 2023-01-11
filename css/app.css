@@ -1,14 +1,7 @@
-/* General settings */
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/montserrat/Montserrat-Bold.ttf") format("truetype");
 }
-:root {
-  --primary-color: #001632;
-  --secondary-color: goldenrod;
-  --tertiary-color: white;
-}
-
 ::-webkit-scrollbar {
   width: 0.5rem;
 }
@@ -18,7 +11,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--secondary-color);
+  background: goldenrod;
   border-radius: 0.5rem;
 }
 
@@ -35,25 +28,24 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-style: italic;
-  color: var(--tertiary-color);
+  color: white;
 }
 
 a {
-  color: var(--tertiary-color);
+  color: white;
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--tertiary-color);
+  color: white;
 }
 
 .min-height {
   min-height: 100vh;
 }
 
-/* Header  */
 .header-md {
-  background-color: var(--primary-color);
+  background-color: #001632;
   height: 4rem;
   position: fixed;
   top: 0;
@@ -61,7 +53,7 @@ a:hover {
   left: 0;
   right: 0;
   z-index: 1;
-  box-shadow: 0 0 1px 0 var(--secondary-color);
+  box-shadow: 0 0 1px 0 goldenrod;
 }
 
 nav {
@@ -91,15 +83,14 @@ nav a span {
   filter: invert(67%) sepia(47%) saturate(697%) hue-rotate(3deg) brightness(92%) contrast(92%);
 }
 
-/* Navigation menu on mobile (aside) */
 #openbtn {
   width: 3rem;
   height: 3rem;
   border: none;
   border-radius: 50%;
   opacity: 0.9;
-  background-color: var(--secondary-color);
-  box-shadow: 0 0 0.2rem var(--primary-color);
+  background-color: goldenrod;
+  box-shadow: 0 0 0.2rem #001632;
   position: fixed;
   top: 1.5rem;
   right: 1.5rem;
@@ -126,7 +117,7 @@ nav a span {
   z-index: 2;
   top: 0;
   right: 0;
-  background-color: var(--primary-color);
+  background-color: #001632;
   opacity: 0.9;
   overflow-x: hidden;
   transition: 0.5s;
@@ -151,8 +142,8 @@ nav a span {
   border: none;
   border-radius: 50%;
   opacity: 0.9;
-  background-color: var(--secondary-color);
-  box-shadow: 0 0 0.2rem var(--primary-color);
+  background-color: goldenrod;
+  box-shadow: 0 0 0.2rem #001632;
   text-align: center;
   line-height: 3rem;
   position: absolute;
@@ -160,7 +151,6 @@ nav a span {
   right: 1.5rem;
 }
 
-/* Main */
 #developer {
   min-height: 100vh;
   background-image: url("../img/bg-odd.jpg");
@@ -181,15 +171,15 @@ nav a span {
 #developer .overlay h1 a:first-child {
   line-height: 3rem !important;
   text-transform: uppercase;
-  text-shadow: 2px 2px var(--primary-color);
-  color: var(--secondary-color);
+  text-shadow: 2px 2px #001632;
+  color: goldenrod;
 }
 #developer .overlay h1 a:first-child:hover {
-  color: var(--secondary-color);
+  color: goldenrod;
 }
 #developer .overlay h1 a:nth-child(2) {
   line-height: 3rem !important;
-  text-shadow: 2px 2px var(--primary-color);
+  text-shadow: 2px 2px #001632;
   color: white;
 }
 #developer .overlay h1 a:nth-child(2):hover {
@@ -201,7 +191,7 @@ nav a span {
   text-align: center;
   text-transform: capitalize;
   color: white;
-  text-shadow: 2px 2px var(--primary-color);
+  text-shadow: 2px 2px #001632;
 }
 
 #skills {
@@ -217,7 +207,7 @@ nav a span {
   background-color: rgba(0, 0, 0, 0.5);
 }
 #skills .overlay h2 {
-  text-shadow: 2px 2px var(--primary-color);
+  text-shadow: 2px 2px #001632;
   text-align: center;
 }
 #skills .overlay #resume {
@@ -226,7 +216,7 @@ nav a span {
   justify-content: center;
   align-items: flex-start;
   text-align: left;
-  text-shadow: 2px 2px var(--primary-color);
+  text-shadow: 2px 2px #001632;
 }
 @media screen and (max-width: 768px) {
   #skills .overlay #resume {
@@ -235,7 +225,7 @@ nav a span {
   }
 }
 #skills .overlay #resume h4 {
-  color: var(--secondary-color);
+  color: goldenrod;
 }
 
 #contacts {
@@ -251,50 +241,50 @@ nav a span {
   background-color: rgba(0, 0, 0, 0.5);
 }
 #contacts .overlay h2 {
-  text-shadow: 2px 2px var(--primary-color);
+  text-shadow: 2px 2px #001632;
   text-align: center;
 }
 #contacts .overlay form label {
   font-size: 1.1rem;
   letter-spacing: 0.1rem;
-  text-shadow: 2px 2px var(--primary-color);
+  text-shadow: 2px 2px #001632;
 }
 #contacts .overlay form input {
-  border: 1.5px solid var(--secondary-color);
+  border: 1.5px solid goldenrod;
   border-radius: 0.5rem;
-  color: var(--primary-color);
+  color: #001632;
   background-color: rgba(255, 255, 255, 0.3);
   padding: 0.5rem;
 }
 #contacts .overlay form input:focus {
   outline: none;
-  box-shadow: 0 0 0 0.15rem var(--secondary-color);
+  box-shadow: 0 0 0 0.15rem goldenrod;
 }
 #contacts .overlay form textarea {
-  border: 1.5px solid var(--secondary-color);
+  border: 1.5px solid goldenrod;
   border-radius: 0.5rem;
-  color: var(--primary-color);
+  color: #001632;
   background-color: rgba(255, 255, 255, 0.3);
   padding: 0.5rem;
   resize: none;
 }
 #contacts .overlay form textarea:focus {
   outline: none;
-  box-shadow: 0 0 0 0.15rem var(--secondary-color);
+  box-shadow: 0 0 0 0.15rem goldenrod;
 }
 #contacts .overlay form button {
-  background-color: var(--secondary-color);
+  background-color: goldenrod;
   border: none;
   border-radius: 0.5rem;
-  color: var(--primary-color);
+  color: #001632;
   font-size: 1.1rem;
   letter-spacing: 0.1rem;
   padding: 0.5rem;
   transition: all 0.3s ease-in-out;
 }
 #contacts .overlay form button:hover {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  background-color: #001632;
+  color: goldenrod;
 }
 
 #skills-container,
@@ -314,8 +304,8 @@ nav a span {
 
 footer {
   min-height: 4rem;
-  background-color: var(--primary-color);
-  box-shadow: 0 0 1px 0 var(--secondary-color);
+  background-color: #001632;
+  box-shadow: 0 0 1px 0 goldenrod;
 }
 
 #footer-nav {
@@ -333,15 +323,14 @@ footer {
     justify-content: center;
   }
 }
-/* Scroll to top button */
 #scroll-to-top {
   width: 3rem;
   height: 3rem;
   border: none;
   border-radius: 50%;
   opacity: 0.9;
-  background-color: var(--secondary-color);
-  box-shadow: 0 0 0.2rem var(--primary-color);
+  background-color: goldenrod;
+  box-shadow: 0 0 0.2rem #001632;
   position: fixed;
   bottom: 1.5rem;
   right: 1.5rem;
