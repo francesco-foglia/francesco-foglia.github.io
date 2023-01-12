@@ -29,9 +29,9 @@ navLinks.forEach((link) => {
   });
 });
 
-// On resize, if the window is bigger than 768px, remove the Navigation menu on mobile (aside).
+// On resize, if the window is bigger than 992px, remove the Navigation menu on mobile (aside).
 window.addEventListener("resize", () => {
-  if (window.innerWidth > 768) {
+  if (window.innerWidth > 992) {
     aside.classList.remove("aside-with");
     html.classList.remove("html-overflow");
   }

@@ -13,13 +13,52 @@ const navLinks = ["developer", "skills", "projects", "contacts"];
 navLinks.forEach((link) => {
   headerNav.innerHTML +=
     `<a href="#${link}">
-      <span class="d-none d-md-block hvr-underline-from-center">${link}</span>
+      <span class="hvr-underline-from-center">${link}</span>
     </a>`;
 
   footerNav.innerHTML +=
     `<a class="m-3" href="#${link}">
       <span class="hvr-underline-from-center">${link}</span>
     </a>`;
+});
+
+// Create constants to store HTML elements for the Navigation menu on mobile (aside).
+const html = document.querySelector("html");
+const aside = document.getElementById("aside");
+const openbtn = document.getElementById("openbtn");
+const closebtn = document.getElementById("closebtn");
+
+// Open and close the Navigation menu on mobile (aside).
+openbtn.addEventListener("click", () => {
+  aside.classList.add("aside-with");
+  html.classList.add("html-overflow");
+});
+
+closebtn.addEventListener("click", () => {
+  aside.classList.remove("aside-with");
+  html.classList.remove("html-overflow");
+});
+
+// Dynamically create the Navigation menu on mobile (aside).
+navLinks.forEach((link) => {
+  aside.innerHTML += `<a href="#${link}">${link}</a>`;
+
+  const asideLink = document.querySelectorAll("aside a");
+
+  asideLink.forEach((link) => {
+    link.addEventListener("click", () => {
+      aside.classList.remove("aside-with");
+      html.classList.remove("html-overflow");
+    });
+  });
+});
+
+// On resize, if the window is bigger than 992px, remove the Navigation menu on mobile (aside).
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 992) {
+    aside.classList.remove("aside-with");
+    html.classList.remove("html-overflow");
+  }
 });
 
 // Create constants to store HTML elements.
@@ -101,30 +140,8 @@ contactsArray.forEach((contact) => {
     </a>`;
 });
 
-// Create constants to store HTML element.
-const scrollToTop = document.getElementById("scroll-to-top");
-
-// When the user scrolls down 100px from the top of the document, show the button.
-window.onscroll = () => {
-  if (document.documentElement.scrollTop > 100) {
-    scrollToTop.classList.add("scroll-to-top-transform");
-  } else {
-    scrollToTop.classList.remove("scroll-to-top-transform");
-  }
-}
-
-// If the page is already scrolled down 100px from the top of the document, show the button.
-if (document.documentElement.scrollTop > 100) {
-  scrollToTop.classList.add("scroll-to-top-transform");
-}
-
-// When the user clicks on the button, scroll to the top of the document.
-scrollToTop.onclick = () => {
-  document.documentElement.scrollTop = 0;
-}
-
-
 const swiper = new Swiper('.swiper', {
+  effect: "fade",
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -146,41 +163,24 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-// Create constants to store HTML elements for the Navigation menu on mobile (aside).
-const html = document.querySelector("html");
-const aside = document.getElementById("aside");
-const openbtn = document.getElementById("openbtn");
-const closebtn = document.getElementById("closebtn");
+// Create constants to store HTML element.
+const scrollToTop = document.getElementById("scroll-to-top");
 
-// Open and close the Navigation menu on mobile (aside).
-openbtn.addEventListener("click", () => {
-  aside.classList.add("aside-with");
-  html.classList.add("html-overflow");
-});
-
-closebtn.addEventListener("click", () => {
-  aside.classList.remove("aside-with");
-  html.classList.remove("html-overflow");
-});
-
-// Dynamically create the Navigation menu on mobile (aside).
-navLinks.forEach((link) => {
-  aside.innerHTML += `<a href="#${link}">${link}</a>`;
-
-  const asideLink = document.querySelectorAll("aside a");
-
-  asideLink.forEach((link) => {
-    link.addEventListener("click", () => {
-      aside.classList.remove("aside-with");
-      html.classList.remove("html-overflow");
-    });
-  });
-});
-
-// On resize, if the window is bigger than 768px, remove the Navigation menu on mobile (aside).
-window.addEventListener("resize", () => {
-  if (window.innerWidth > 768) {
-    aside.classList.remove("aside-with");
-    html.classList.remove("html-overflow");
+// When the user scrolls down 100px from the top of the document, show the button.
+window.onscroll = () => {
+  if (document.documentElement.scrollTop > 100) {
+    scrollToTop.classList.add("scroll-to-top-transform");
+  } else {
+    scrollToTop.classList.remove("scroll-to-top-transform");
   }
-});
+}
+
+// If the page is already scrolled down 100px from the top of the document, show the button.
+if (document.documentElement.scrollTop > 100) {
+  scrollToTop.classList.add("scroll-to-top-transform");
+}
+
+// When the user clicks on the button, scroll to the top of the document.
+scrollToTop.onclick = () => {
+  document.documentElement.scrollTop = 0;
+}

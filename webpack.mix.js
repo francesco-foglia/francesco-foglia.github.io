@@ -6,7 +6,8 @@ mix
   })
   .combine([
     'src/js/header-footer.js',
+    'src/js/navigation-mobile.js',
     'src/js/skills-contacts.js',
+    'src/js/slider.js',
     'src/js/scroll-to-top.js',
-    'src/js/navigation-mobile.js'
   ], 'js/app.js');

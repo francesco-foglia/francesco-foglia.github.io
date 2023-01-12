@@ -47,8 +47,8 @@ h2 {
   text-align: center;
 }
 
-h4 {
-  line-height: 2.5rem;
+p {
+  line-height: 1.7 !important;
 }
 
 small {
@@ -57,7 +57,7 @@ small {
   text-transform: uppercase;
 }
 
-.header-md {
+.header-lg {
   height: 4rem;
   background-color: #001632;
   box-shadow: 0 0 1px 0 goldenrod;
@@ -176,7 +176,7 @@ small {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   #skills,
   #projects,
   #contacts {
@@ -186,11 +186,7 @@ small {
 #developer {
   background-image: url("../img/bg-odd.jpg");
 }
-#developer .overlay h1 {
-  line-height: 3rem !important;
-}
 #developer .overlay h1 a:first-child {
-  line-height: 3rem !important;
   text-transform: uppercase;
   color: goldenrod;
 }
@@ -198,14 +194,12 @@ small {
   color: goldenrod;
 }
 #developer .overlay h1 a:nth-child(2) {
-  line-height: 3rem !important;
   color: white;
 }
 #developer .overlay h1 a:nth-child(2):hover {
   color: white;
 }
 #developer .overlay h2 {
-  line-height: 3rem !important;
   text-transform: capitalize;
   color: white;
 }
@@ -220,7 +214,7 @@ small {
   align-items: flex-start;
   text-align: left;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   #skills .overlay #resume {
     align-items: center;
     text-align: center;
@@ -235,7 +229,6 @@ small {
 }
 #projects .overlay p {
   text-align: center;
-  line-height: 4rem;
 }
 #projects .overlay p a {
   color: goldenrod;
@@ -303,7 +296,7 @@ small {
   min-height: 100vh;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .min-height {
     min-height: 100%;
   }
@@ -316,6 +309,9 @@ small {
 .swiper {
   border-radius: 1rem;
   box-shadow: 0 0 0 0.15rem #001632;
+}
+.swiper .swiper-slide {
+  height: unset;
 }
 .swiper .swiper-slide img {
   width: 100%;
@@ -359,7 +355,7 @@ footer {
   min-height: 4rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   #footer-nav {
     flex-direction: column;
     justify-content: center;

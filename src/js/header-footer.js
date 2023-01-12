@@ -13,7 +13,7 @@ const navLinks = ["developer", "skills", "projects", "contacts"];
 navLinks.forEach((link) => {
   headerNav.innerHTML +=
     `<a href="#${link}">
-      <span class="d-none d-md-block hvr-underline-from-center">${link}</span>
+      <span class="hvr-underline-from-center">${link}</span>
     </a>`;
 
   footerNav.innerHTML +=

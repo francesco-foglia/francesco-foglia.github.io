@@ -32,14 +32,14 @@
 
   <!-- Header -->
   <header>
-    <div class="header-md container-fluid d-none d-md-block">
+    <div class="header-lg container-fluid d-none d-lg-block">
       <nav id="header-nav" class="container">
         <!-- Navigation links rendered with JavaScript -->
       </nav>
     </div>
 
     <!-- Button to open the navigation menu on mobile -->
-    <div class="d-block d-md-none">
+    <div class="d-block d-lg-none">
       <button id="openbtn">
         <img src="img/bars.svg" alt="Bars">
       </button>
@@ -68,14 +68,14 @@
                 <h1 data-aos="zoom-out" data-aos-delay="100">
                   <div class="row">
                     <a href="#contacts" class="col-12 col-lg-6 display-4 mb-5 hvr-float">Francesco Foglia</a>
-                    <a href="#skills" class="col-12 col-lg-6 mb-5 hvr-float">Front End Developer</a>
+                    <a href="#skills" class="col-12 col-lg-6 mt-3 mb-5 hvr-float">Front End Developer</a>
                   </div>
                 </h1>
                 <h2 data-aos="zoom-out" data-aos-delay="100">
                   <div class="row">
                     <p class="col-12 mb-5">Wanna know more about me?</p>
-                    <p class="col-12 mb-5 d-none d-md-block">Just click on the links above or scroll down the page!</p>
-                    <p class="col-12 mb-5 d-block d-md-none">Just open the menu above or scroll down the page!</p>
+                    <p class="col-12 mb-5 d-none d-lg-block">Just click on the links above or scroll down the page!</p>
+                    <p class="col-12 mb-5 d-block d-lg-none">Just open the menu above or scroll down the page!</p>
                   </div>
                 </h2>
               </div>
@@ -89,7 +89,7 @@
       <div class="overlay py-5">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 d-flex py-5 py-md-0 min-height">
+            <div class="col-lg-6 d-flex py-5 py-lg-0 min-height">
               <div class="m-auto">
                 <h2 class="display-4 mb-5" data-aos="zoom-out" data-aos-delay="100">
                   Skills
@@ -100,7 +100,7 @@
               </div>
             </div>
             <!-- Resume -->
-            <div class="col-md-6 d-flex py-5 py-md-0 min-height">
+            <div class="col-lg-6 d-flex py-5 py-lg-0 min-height">
               <div id="resume" class="m-auto">
                 <h3 class="h4 my-3" data-aos="zoom-out" data-aos-delay="100">Resume</h3>
                 <div class="my-2" data-aos="zoom-out" data-aos-delay="100">
@@ -141,8 +141,8 @@
                 </p>
               </div>
             </div>
-            <div class="col-lg-8 d-flex min-height-proj">
-              <div class="m-auto w-100 px-lg-5">
+            <div class="col-lg-8 d-flex px-lg-5 min-height-proj">
+              <div class="m-auto w-100">
                 <div class="swiper" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
                   <!-- Additional required wrapper -->
                   <div class="swiper-wrapper">
@@ -154,15 +154,19 @@
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a href="https://www.reterurale.it/flex/images/c/e/2/D.3a4854418244e96b18c8/1.jpg"
+                      <a href="https://www.labsus.org/wp-content/uploads/2018/05/architecture-3095716_1920-1140x760.jpg"
                         target="_blank">
-                        <img src="https://www.reterurale.it/flex/images/c/e/2/D.3a4854418244e96b18c8/1.jpg" alt="">
+                        <img
+                          src="https://www.labsus.org/wp-content/uploads/2018/05/architecture-3095716_1920-1140x760.jpg"
+                          alt="">
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a href="https://www.reterurale.it/flex/images/c/e/2/D.3a4854418244e96b18c8/1.jpg"
+                      <a href="https://i0.wp.com/viaggiosoloandata.it/wp-content/uploads/2021/03/Immagine-copertina-per-blog-1-2.jpg?fit=770%2C510&ssl=1"
                         target="_blank">
-                        <img src="https://www.reterurale.it/flex/images/c/e/2/D.3a4854418244e96b18c8/1.jpg" alt="">
+                        <img
+                          src="https://i0.wp.com/viaggiosoloandata.it/wp-content/uploads/2021/03/Immagine-copertina-per-blog-1-2.jpg?fit=770%2C510&ssl=1"
+                          alt="">
                       </a>
                     </div>
                   </div>
@@ -187,7 +191,7 @@
       <div class="overlay py-5">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 d-flex py-5 py-md-0 min-height">
+            <div class="col-lg-6 d-flex py-5 py-lg-0 min-height">
               <div class="m-auto">
                 <h2 class="display-4 mb-5" data-aos="zoom-out" data-aos-delay="100">
                   Contacts
@@ -196,12 +200,14 @@
                   <!-- Contacts images rendered with JavaScript -->
                 </div>
                 <p class="h4" data-aos="zoom-out" data-aos-delay="100">
-                  Or use the form...
+                  Or use the form
+                  <span class="d-none d-lg-inline-block">beside</span>
+                  <span class="d-inline-block d-lg-none">below</span>
                 </p>
               </div>
             </div>
             <!-- Contact form -->
-            <div class="col-md-6 d-flex min-height">
+            <div class="col-lg-6 d-flex min-height">
               <div class="m-auto w-100">
                 <form id="contact-form" class="p-5">
                   <div class="my-3" data-aos="zoom-out" data-aos-delay="100">
@@ -227,7 +233,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="container-fluid py-5 py-md-0">
+  <footer class="container-fluid py-5 py-lg-0">
     <nav id="footer-nav" class="container">
       <!-- Navigation links rendered with JavaScript -->
     </nav>
