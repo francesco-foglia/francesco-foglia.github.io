@@ -9,6 +9,25 @@ const footerNav = document.getElementById("footer-nav");
 
 const navLinks = ["developer", "skills", "contacts"];
 
+// Dynamically create the Header and Footer Navigation.
+navLinks.forEach((link) => {
+  headerNav.innerHTML +=
+    `<a
+      data-aos=""
+      data-aos-delay="100"
+      href="#${link}"
+      >
+      <span class="d-none d-md-block hvr-underline-from-center">${link}</span>
+      <img class="d-block d-md-none icon" src="img/nav-icons/${link}.svg" alt="${link}">
+    </a>`;
+
+  footerNav.innerHTML +=
+    `<a class="m-3" href="#${link}">
+      <span class="hvr-underline-from-center">${link}</span>
+    </a>`;
+});
+
+// Create constants to store HTML elements.
 const skills = document.getElementById("skills-container");
 
 const skillsArray = [
@@ -59,29 +78,6 @@ const contactsArray = [
   }
 ];
 
-const scrollToTop = document.getElementById("scroll-to-top");
-
-
-// Dynamically create the Header and Footer Navigation.
-navLinks.forEach((link) => {
-  headerNav.innerHTML +=
-    `<a
-      data-aos=""
-      data-aos-delay="100"
-      href="#${link}"
-     >
-      <span class="d-none d-md-block hvr-underline-from-center">${link}</span>
-      <img class="d-block d-md-none icon" src="img/nav-icons/${link}.svg" alt="${link}">
-    </a>`;
-
-  footerNav.innerHTML += `
-    <a class="m-3" href="#${link}">
-      <span class="hvr-underline-from-center">${link}</span>
-    </a>
-  `;
-});
-
-
 // Dynamically create the skills.
 skillsArray.forEach((skill) => {
   skills.innerHTML +=
@@ -95,7 +91,6 @@ skillsArray.forEach((skill) => {
       <small>${skill.name}</small>
     </a>`;
 });
-
 
 // Dynamically create the contacts.
 contactsArray.forEach((contact) => {
@@ -111,6 +106,8 @@ contactsArray.forEach((contact) => {
     </a>`;
 });
 
+// Create constants to store HTML element.
+const scrollToTop = document.getElementById("scroll-to-top");
 
 // When the user scrolls down 100px from the top of the document, show the button.
 window.onscroll = () => {
@@ -130,7 +127,6 @@ if (document.documentElement.scrollTop > 100) {
 scrollToTop.onclick = () => {
   document.documentElement.scrollTop = 0;
 }
-
 
 // Create constants to store HTML elements for the Navigation menu on mobile (aside).
 const html = document.querySelector("html");
