@@ -75,6 +75,11 @@
   background-image: url("../img/bg-odd.jpg");
 
   .overlay {
+    p {
+      margin-top: 4rem;
+      text-align: center;
+    }
+
     form {
       label {
         font-size: 1.1rem;
@@ -124,6 +129,8 @@
 .skill,
 .contact {
   width: 5rem;
+  min-height: 5rem;
+  object-fit: contain;
   margin: 2rem;
   filter: drop-shadow(2px 2px 2px black);
 }

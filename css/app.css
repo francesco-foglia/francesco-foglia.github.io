@@ -57,6 +57,16 @@ h2 {
   text-align: center;
 }
 
+h4 {
+  line-height: 2.5rem;
+}
+
+small {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .header-md {
   height: 4rem;
   background-color: #001632;
@@ -224,6 +234,10 @@ h2 {
 #contacts {
   background-image: url("../img/bg-odd.jpg");
 }
+#contacts .overlay p {
+  margin-top: 4rem;
+  text-align: center;
+}
 #contacts .overlay form label {
   font-size: 1.1rem;
 }
@@ -266,6 +280,9 @@ h2 {
 .skill,
 .contact {
   width: 5rem;
+  min-height: 5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin: 2rem;
   filter: drop-shadow(2px 2px 2px black);
 }

@@ -85,14 +85,14 @@ navLinks.forEach((link) => {
 // Dynamically create the skills.
 skillsArray.forEach((skill) => {
   skills.innerHTML +=
-    `<a href="${skill.url}" target="_blank" rel="noopener noreferrer">
-      <img
-        class="skill hvr-bob"
-        data-aos="zoom-out"
-        data-aos-delay="100"
-        src="img/skills/${skill.name}.png"
-        alt="${skill.name} logo"
+    `<a
+      href="${skill.url}"
+      target="_blank"
+      rel="noopener noreferrer"
+      data-aos="zoom-out" data-aos-delay="100"
       >
+      <img class="skill hvr-bob" src="img/skills/${skill.name}.png" alt="${skill.name} logo">
+      <small>${skill.name}</small>
     </a>`;
 });
 
@@ -100,14 +100,14 @@ skillsArray.forEach((skill) => {
 // Dynamically create the contacts.
 contactsArray.forEach((contact) => {
   contacts.innerHTML +=
-    `<a href="${contact.url}" target="_blank" rel="noopener noreferrer">
-      <img
-        class="contact hvr-bob"
-        data-aos="zoom-out"
-        data-aos-delay="100"
-        src="img/contacts/${contact.name}.png"
-        alt="${contact.name} logo"
+    `<a
+      href="${contact.url}"
+      target="_blank"
+      rel="noopener noreferrer"
+      data-aos="zoom-out" data-aos-delay="100"
       >
+      <img class="contact hvr-bob" src="img/contacts/${contact.name}.png" alt="${contact.name} logo">
+      <small>${contact.name}</small>
     </a>`;
 });
 
