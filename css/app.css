@@ -42,16 +42,6 @@ a:hover {
   color: white;
 }
 
-.min-height-dev,
-.min-height {
-  min-height: 100vh;
-}
-
-@media screen and (max-width: 768px) {
-  .min-height {
-    min-height: 100%;
-  }
-}
 h1,
 h2 {
   text-align: center;
@@ -76,7 +66,7 @@ small {
   bottom: unset;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 #header-nav {
@@ -106,7 +96,7 @@ small {
   position: fixed;
   top: 1.5rem;
   right: 1.5rem;
-  z-index: 1;
+  z-index: 2;
 }
 
 #openbtn img {
@@ -126,7 +116,7 @@ small {
   min-height: 100vh;
   width: 0;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   right: 0;
   background-color: #001632;
@@ -170,6 +160,7 @@ small {
 
 #developer,
 #skills,
+#projects,
 #contacts {
   min-height: 100vh;
   background-size: cover;
@@ -178,12 +169,20 @@ small {
 }
 #developer .overlay,
 #skills .overlay,
+#projects .overlay,
 #contacts .overlay {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (max-width: 768px) {
+  #skills,
+  #projects,
+  #contacts {
+    min-height: 100%;
+  }
+}
 #developer {
   background-image: url("../img/bg-odd.jpg");
 }
@@ -231,11 +230,22 @@ small {
   color: goldenrod;
 }
 
-#contacts {
+#projects {
   background-image: url("../img/bg-odd.jpg");
 }
+#projects .overlay p {
+  text-align: center;
+  line-height: 4rem;
+}
+#projects .overlay p a {
+  color: goldenrod;
+}
+
+#contacts {
+  background-image: url("../img/bg-even.jpg");
+}
 #contacts .overlay p {
-  margin-top: 4rem;
+  margin-top: 5rem;
   text-align: center;
 }
 #contacts .overlay form label {
@@ -287,6 +297,53 @@ small {
   filter: drop-shadow(2px 2px 2px black);
 }
 
+.min-height-dev,
+.min-height,
+.min-height-proj {
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .min-height {
+    min-height: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .min-height-proj {
+    min-height: calc(50vh - 3rem);
+  }
+}
+.swiper {
+  border-radius: 1rem;
+  box-shadow: 0 0 0 0.15rem #001632;
+}
+.swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  min-height: 40vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 1rem;
+}
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 50%;
+  border: 1px solid #001632;
+  color: #001632 !important;
+  background-color: goldenrod;
+}
+.swiper .swiper-button-next::after,
+.swiper .swiper-button-prev::after {
+  line-height: 35px;
+  font-size: 15px !important;
+  font-style: normal;
+  text-shadow: none;
+}
+
 footer {
   min-height: 4rem;
   background-color: #001632;
@@ -330,6 +387,7 @@ footer {
   right: 1.5rem;
   transform: scale(0);
   transition: transform 0.5s;
+  z-index: 1;
 }
 
 #scroll-to-top img {

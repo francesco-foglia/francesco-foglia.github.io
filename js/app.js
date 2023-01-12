@@ -7,18 +7,13 @@ const headerNav = document.getElementById("header-nav");
 
 const footerNav = document.getElementById("footer-nav");
 
-const navLinks = ["developer", "skills", "contacts"];
+const navLinks = ["developer", "skills", "projects", "contacts"];
 
 // Dynamically create the Header and Footer Navigation.
 navLinks.forEach((link) => {
   headerNav.innerHTML +=
-    `<a
-      data-aos=""
-      data-aos-delay="100"
-      href="#${link}"
-      >
+    `<a href="#${link}">
       <span class="d-none d-md-block hvr-underline-from-center">${link}</span>
-      <img class="d-block d-md-none icon" src="img/nav-icons/${link}.svg" alt="${link}">
     </a>`;
 
   footerNav.innerHTML +=
@@ -127,6 +122,29 @@ if (document.documentElement.scrollTop > 100) {
 scrollToTop.onclick = () => {
   document.documentElement.scrollTop = 0;
 }
+
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
 
 // Create constants to store HTML elements for the Navigation menu on mobile (aside).
 const html = document.querySelector("html");
