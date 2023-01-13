@@ -4,8 +4,8 @@ Project realized for the master in Front End Development of [start2impact](https
 
 ## Technologies
 
-* [HTML](https://html.spec.whatwg.org)
-* [CSS](https://www.w3.org/TR/CSS)
+* [HTML](https://html.spec.whatwg.org/)
+* [Sass](https://sass-lang.com/)
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ## Resources
@@ -13,8 +13,11 @@ Project realized for the master in Front End Development of [start2impact](https
 * [Bootstrap](https://getbootstrap.com/)
 * [Google Fonts](https://fonts.google.com/)
 * [Font Awesome](https://fontawesome.com/)
+* [Pixabay](https://pixabay.com/)
 * [Hover.css](https://ianlunn.github.io/Hover/)
 * [Animate On Scroll](https://michalsnik.github.io/aos/)
+* [Swiper](https://swiperjs.com/)
+* [Laravel Mix](https://laravel-mix.com/)
 
 ## Watch it on GitHub Pages
 

@@ -1,4 +1,4 @@
-// Create constants to store HTML element.
+// Create constant to store HTML element.
 const scrollToTop = document.getElementById("scroll-to-top");
 
 // When the user scrolls down 100px from the top of the document, show the button.

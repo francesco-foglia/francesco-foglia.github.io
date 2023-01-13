@@ -1,5 +1,7 @@
+// Load Laravel Mix module
 let mix = require('laravel-mix');
 
+// Set public path for assets
 mix
   .sass('src/sass/app.scss', 'css').options({
     processCssUrls: false

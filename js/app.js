@@ -140,6 +140,7 @@ contactsArray.forEach((contact) => {
     </a>`;
 });
 
+// Array of objects with the name and link of each project
 const swiperSlide = [
   { name: "htmlcss-hubspot", link: "https://francesco-foglia.github.io/htmlcss-hubspot/" },
   { name: "html-css-digitalocean", link: "https://francesco-foglia.github.io/html-css-digitalocean/" },
@@ -153,13 +154,15 @@ const swiperSlide = [
   { name: "capellimario", link: "https://www.capellimario.it/" },
   { name: "curlybags", link: "https://www.curlybags.it/" },
   { name: "diletteratura", link: "https://www.diletteratura.it/" },
-  { name: "htmlcss-wp", link: "https://francesco-foglia.github.io/htmlcss-wp/" },
-  { name: "html-css-bootstrap-freelancer", link: "https://francesco-foglia.github.io/html-css-bootstrap-freelancer/" },
-  { name: "vue-dischi", link: "https://francesco-foglia.github.io/vue-dischi/" },
+  // { name: "htmlcss-wp", link: "https://francesco-foglia.github.io/htmlcss-wp/" },
+  // { name: "html-css-bootstrap-freelancer", link: "https://francesco-foglia.github.io/html-css-bootstrap-freelancer/" },
+  // { name: "vue-dischi", link: "https://francesco-foglia.github.io/vue-dischi/" },
 ];
 
-swiperWrapper = document.querySelector('.swiper-wrapper');
+// Get the element with the class swiper-wrapper
+const swiperWrapper = document.querySelector('.swiper-wrapper');
 
+// Loop through the array of objects and create a new slide for each object
 swiperSlide.forEach((slide) => {
   swiperWrapper.innerHTML += `
     <div class="swiper-slide">
@@ -170,6 +173,7 @@ swiperSlide.forEach((slide) => {
   `;
 });
 
+// Initialize Swiper slider with the class swiper and the options below
 const swiper = new Swiper('.swiper', {
   effect: "fade",
   speed: 500,
@@ -186,7 +190,7 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-// Create constants to store HTML element.
+// Create constant to store HTML element.
 const scrollToTop = document.getElementById("scroll-to-top");
 
 // When the user scrolls down 100px from the top of the document, show the button.
