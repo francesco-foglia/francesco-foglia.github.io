@@ -76,3 +76,10 @@ contactsArray.forEach((contact) => {
       <small>${contact.name}</small>
     </a>`;
 });
+
+// Clear the form after submission.
+window.onbeforeunload = () => {
+  for (const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}

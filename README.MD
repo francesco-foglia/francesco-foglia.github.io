@@ -18,6 +18,7 @@ Project realized for the master in Front End Development of [start2impact](https
 * [Animate On Scroll](https://michalsnik.github.io/aos/)
 * [Swiper](https://swiperjs.com/)
 * [Laravel Mix](https://laravel-mix.com/)
+* [Formspree](https://formspree.io/)
 
 ## Watch it on GitHub Pages
 

@@ -140,6 +140,13 @@ contactsArray.forEach((contact) => {
     </a>`;
 });
 
+// Clear the form after submission.
+window.onbeforeunload = () => {
+  for (const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
+
 // Array of objects with the name and link of each project
 const swiperSlide = [
   { name: "htmlcss-hubspot", link: "https://francesco-foglia.github.io/htmlcss-hubspot/" },
