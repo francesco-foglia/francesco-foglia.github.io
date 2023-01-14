@@ -165,7 +165,6 @@ small {
   min-height: 100vh;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
 #developer .overlay,
 #skills .overlay,
@@ -238,7 +237,7 @@ small {
   background-image: url("../img/bg-even.jpg");
 }
 #contacts .overlay p {
-  margin-top: 5rem;
+  margin-top: 4.5rem;
   text-align: center;
 }
 #contacts .overlay form label {
@@ -354,29 +353,46 @@ footer {
   background-color: #001632;
   box-shadow: 0 0 1px 0 goldenrod;
 }
-
-#footer-nav {
+footer #footer-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  min-height: 4rem;
+  min-height: 3rem;
 }
-
+footer #footer-nav a {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+}
+footer #footer-nav a span {
+  padding-right: 0.15rem;
+}
 @media screen and (max-width: 992px) {
-  #footer-nav {
+  footer #footer-nav {
     flex-direction: column;
     justify-content: center;
   }
 }
-#footer-nav a {
-  text-transform: uppercase;
-  font-size: 1.3rem;
+footer hr {
+  color: goldenrod;
 }
-
-#footer-nav a span {
-  padding-right: 0.15rem;
+@media screen and (min-width: 992px) {
+  footer hr {
+    margin: 0;
+  }
+}
+footer p {
+  min-height: 2rem;
+  margin-bottom: 0;
+  padding: 1rem;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  footer p {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 #scroll-to-top {

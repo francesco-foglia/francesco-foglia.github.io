@@ -1,7 +1,6 @@
 // Animate On Scroll Library
 AOS.init();
 
-
 // Create constants to store HTML elements.
 const headerNav = document.getElementById("header-nav");
 
@@ -20,4 +19,10 @@ navLinks.forEach((link) => {
     `<a class="m-3" href="#${link}">
       <span class="hvr-underline-from-center">${link}</span>
     </a>`;
+});
+
+// Set the current year in the Footer.
+const year = document.querySelectorAll(".year");
+year.forEach((el) => {
+  el.innerHTML = new Date().getFullYear();
 });
