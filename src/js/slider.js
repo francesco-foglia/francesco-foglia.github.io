@@ -16,6 +16,7 @@ const swiperSlide = [
   // { name: "html-css-bootstrap-freelancer", link: "https://francesco-foglia.github.io/html-css-bootstrap-freelancer/" },
   // { name: "vue-dischi", link: "https://francesco-foglia.github.io/vue-dischi/" },
   { name: "js-counter-app", link: "https://francesco-foglia.github.io/js-counter-app/" },
+  { name: "js-cities-app", link: "https://francesco-foglia.github.io/js-cities-app/" },
 ];
 
 // Get the element with the class swiper-wrapper
