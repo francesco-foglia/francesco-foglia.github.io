@@ -17,6 +17,7 @@ const swiperSlide = [
   // { name: "vue-dischi", link: "https://francesco-foglia.github.io/vue-dischi/" },
   { name: "js-counter-app", link: "https://francesco-foglia.github.io/js-counter-app/" },
   { name: "js-cities-app", link: "https://francesco-foglia.github.io/js-cities-app/" },
+  { name: "vue-tic-tac-toe-app", link: "https://vue-tic-tac-toe-app.vercel.app/" },
 ];
 
 // Get the element with the class swiper-wrapper
