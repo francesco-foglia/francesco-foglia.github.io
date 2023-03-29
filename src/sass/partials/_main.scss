@@ -1,0 +1,178 @@
+#developer,
+#skills,
+#projects,
+#contacts {
+  min-height: 100svh;
+  background-size: cover;
+  background-position: center;
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  #skills,
+  #projects,
+  #contacts {
+    min-height: 100%;
+  }
+}
+
+#developer {
+  background-image: url("../img/bg-odd.jpg");
+
+  .overlay {
+    h1 {
+      a:first-child {
+        text-transform: uppercase;
+        color: $secondaryColor;
+
+        &:hover {
+          color: $secondaryColor;
+        }
+      }
+
+      a:nth-child(2) {
+        color: white;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+
+    h2 {
+      text-transform: capitalize;
+      color: white;
+    }
+  }
+}
+
+#skills {
+  background-image: url("../img/bg-even.jpg");
+
+  .overlay {
+    #resume {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+
+      @media screen and (max-width: 992px) {
+        align-items: center;
+        text-align: center;
+      }
+
+      h4 {
+        color: $secondaryColor;
+      }
+    }
+  }
+}
+
+#projects {
+  background-image: url("../img/bg-odd.jpg");
+
+  .overlay {
+    p {
+      text-align: center;
+
+      a {
+        color: $secondaryColor;
+      }
+    }
+  }
+}
+
+#contacts {
+  background-image: url("../img/bg-even.jpg");
+
+  .overlay {
+    p {
+      margin-top: 4.5rem;
+      text-align: center;
+    }
+
+    form {
+      label {
+        font-size: 1.1rem;
+      }
+
+      input,
+      textarea {
+        border: 1.5px solid $secondaryColor;
+        border-radius: 0.5rem;
+        color: $tertiaryColor;
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 0.5rem;
+        resize: none;
+
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 0 0.15rem $secondaryColor;
+        }
+      }
+
+      button {
+        background-color: $secondaryColor;
+        border: none;
+        border-radius: 0.5rem;
+        color: $tertiaryColor;
+        font-size: 1.1rem;
+        padding: 0.5rem;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: $tertiaryColor;
+          color: $secondaryColor;
+        }
+      }
+    }
+  }
+}
+
+#skills-container,
+#contacts-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skill,
+.contact {
+  width: 5rem;
+  min-height: 5rem;
+  object-fit: contain;
+  margin: 2rem;
+  filter: drop-shadow(2px 2px 2px black);
+}
+
+.min-height-dev,
+.min-height,
+.min-height-proj {
+  min-height: 100svh;
+}
+
+@media screen and (max-width: 992px) {
+  .min-height {
+    min-height: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .min-height-proj {
+    min-height: calc(50svh - 3rem);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .padding-lg {
+    padding: 100px 0 !important;
+  }
+}

@@ -1,0 +1,107 @@
+#openbtn {
+  @include btn;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 4;
+}
+
+.html-overflow {
+  overflow: hidden;
+}
+
+#aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+
+  min-height: 100svh;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  background-color: $tertiaryColor;
+  // opacity: 0.9;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.aside-with {
+  width: 50% !important;
+}
+
+@media screen and (max-width: 640px) {
+  .aside-with {
+    width: 100% !important;
+  }
+}
+
+#aside a {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.hamburger {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  z-index: 4;
+}
+
+.hamburger-1,
+.hamburger-2,
+.hamburger-3 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 20px;
+  height: 3px;
+  background-color: $tertiaryColor;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+
+.hamburger-1 {
+  transform: translateY(7.5px);
+}
+
+.hamburger-2 {
+  opacity: 1;
+}
+
+.hamburger-3 {
+  transform: translateY(-7.5px);
+}
+
+.hamburger-1-toggle {
+  transform: rotate(45deg) translateY(0px);
+}
+
+.hamburger-2-toggle {
+  opacity: 0;
+}
+
+.hamburger-3-toggle {
+  transform: rotate(-45deg) translateY(0px);
+}
+
+.overlay-1 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  backdrop-filter: blur(0px);
+  background-color: transparent;
+  transition: backdrop-filter 0.5s ease-in-out, background-color 0.5s ease-in-out, z-index 0.5s ease-in-out;
+}
+
+.overlay-2 {
+  backdrop-filter: blur(10px);
+  background-color: rgb(20, 22, 51, 0.2);
+  z-index: 2;
+}

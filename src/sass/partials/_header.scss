@@ -1,0 +1,28 @@
+.header-lg {
+  height: 4rem;
+  background-color: $tertiaryColor;
+  box-shadow: 0 0 1px 0 $secondaryColor;
+
+  position: fixed;
+  top: 0;
+  bottom: unset;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+#header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+#header-nav a {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+#header-nav a span {
+  padding-right: 0.15rem;
+}
