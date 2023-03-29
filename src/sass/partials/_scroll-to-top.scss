@@ -1,0 +1,17 @@
+#scroll-to-top {
+  @include btn;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  transform: scale(0);
+  transition: transform 0.5s;
+  z-index: 1;
+}
+
+#scroll-to-top img {
+  width: 1.5rem;
+}
+
+.scroll-to-top-transform {
+  transform: scale(1) !important;
+}
