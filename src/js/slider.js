@@ -16,8 +16,9 @@ const swiperSlide = [
   // { name: "html-css-bootstrap-freelancer", link: "https://francesco-foglia.github.io/html-css-bootstrap-freelancer/" },
   // { name: "vue-dischi", link: "https://francesco-foglia.github.io/vue-dischi/" },
   { name: "angular-gorest-app", link: "https://angular-gorest-app.vercel.app/" },
-  { name: "js-cities-app", link: "https://francesco-foglia.github.io/js-cities-app/" },
-  { name: "js-counter-app", link: "https://francesco-foglia.github.io/js-counter-app/" },
+  { name: "angular-news-app", link: "https://angular-news-app.vercel.app/" },
+  // { name: "js-cities-app", link: "https://francesco-foglia.github.io/js-cities-app/" },
+  // { name: "js-counter-app", link: "https://francesco-foglia.github.io/js-counter-app/" },
   { name: "vue-tic-tac-toe-app", link: "https://vue-tic-tac-toe-app.vercel.app/" },
   { name: "vue-dashboard-app", link: "https://vue-dashboard-app.vercel.app/" },
 ];
