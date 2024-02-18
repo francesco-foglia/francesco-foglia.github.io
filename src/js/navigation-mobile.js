@@ -2,18 +2,10 @@
 const html = document.querySelector("html");
 const aside = document.getElementById("aside");
 const openbtn = document.getElementById("openbtn");
-const closebtn = document.getElementById("closebtn");
-
-// Open and close the Navigation menu on mobile (aside).
-openbtn.addEventListener("click", () => {
-  aside.classList.add("aside-with");
-  html.classList.add("html-overflow");
-});
-
-closebtn.addEventListener("click", () => {
-  aside.classList.remove("aside-with");
-  html.classList.remove("html-overflow");
-});
+const hamburger1 = document.querySelector(".hamburger .hamburger-1");
+const hamburger2 = document.querySelector(".hamburger .hamburger-2");
+const hamburger3 = document.querySelector(".hamburger .hamburger-3");
+const overlay = document.getElementById("overlay");
 
 // Dynamically create the Navigation menu on mobile (aside).
 navLinks.forEach((link) => {
@@ -25,6 +17,10 @@ navLinks.forEach((link) => {
     link.addEventListener("click", () => {
       aside.classList.remove("aside-with");
       html.classList.remove("html-overflow");
+      hamburger1.classList.remove("hamburger-1-toggle");
+      hamburger2.classList.remove("hamburger-2-toggle");
+      hamburger3.classList.remove("hamburger-3-toggle");
+      overlay.classList.remove("overlay-2");
     });
   });
 });
@@ -34,5 +30,29 @@ window.addEventListener("resize", () => {
   if (window.innerWidth > 992) {
     aside.classList.remove("aside-with");
     html.classList.remove("html-overflow");
+    hamburger1.classList.remove("hamburger-1-toggle");
+    hamburger2.classList.remove("hamburger-2-toggle");
+    hamburger3.classList.remove("hamburger-3-toggle");
+    overlay.classList.remove("overlay-2");
   }
+});
+
+// On click, toggle the Navigation menu on mobile (aside).
+openbtn.addEventListener("click", () => {
+  aside.classList.toggle("aside-with");
+  html.classList.toggle("html-overflow");
+  hamburger1.classList.toggle("hamburger-1-toggle");
+  hamburger2.classList.toggle("hamburger-2-toggle");
+  hamburger3.classList.toggle("hamburger-3-toggle");
+  overlay.classList.toggle("overlay-2");
+});
+
+// On click, toggle the Navigation menu on mobile (aside).
+overlay.addEventListener("click", () => {
+  aside.classList.remove("aside-with");
+  html.classList.remove("html-overflow");
+  hamburger1.classList.remove("hamburger-1-toggle");
+  hamburger2.classList.remove("hamburger-2-toggle");
+  hamburger3.classList.remove("hamburger-3-toggle");
+  overlay.classList.toggle("overlay-2");
 });

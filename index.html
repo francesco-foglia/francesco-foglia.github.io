@@ -47,6 +47,9 @@
 
 <body>
 
+  <!-- Overlay -->
+  <div id="overlay" class="overlay-1"></div>
+
   <!-- Header -->
   <header>
     <div class="header-lg container-fluid d-none d-lg-block">
@@ -57,18 +60,18 @@
 
     <!-- Button to open the navigation menu on mobile -->
     <div class="d-block d-lg-none">
-      <button id="openbtn">
-        <img src="img/bars.svg" alt="Bars">
+      <button id="openbtn" class="d-flex">
+        <!-- Hamburger -->
+        <div class="hamburger m-auto">
+          <div class="hamburger-1"></div>
+          <div class="hamburger-2"></div>
+          <div class="hamburger-3"></div>
+        </div>
       </button>
     </div>
 
     <!-- Navigation menu on mobile -->
     <aside id="aside" class="">
-      <!-- Button to close the navigation menu on mobile -->
-      <a href="javascript:void(0)" id="closebtn">
-        <img src="img/xmark.svg" alt="Xmark">
-      </a>
-
       <!-- Navigation links rendered with JavaScript -->
     </aside>
   </header>
