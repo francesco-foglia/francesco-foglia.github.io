@@ -24,7 +24,7 @@
   top: 0;
   right: 0;
   background-color: $tertiaryColor;
-  opacity: 0.9;
+  // opacity: 0.9;
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -33,7 +33,7 @@
   width: 50% !important;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 640px) {
   .aside-with {
     width: 100% !important;
   }
