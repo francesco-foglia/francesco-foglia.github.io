@@ -15,6 +15,7 @@ const swiperSlide = [
   // { name: "htmlcss-wp", link: "https://francesco-foglia.github.io/htmlcss-wp/" },
   // { name: "html-css-bootstrap-freelancer", link: "https://francesco-foglia.github.io/html-css-bootstrap-freelancer/" },
   // { name: "vue-dischi", link: "https://francesco-foglia.github.io/vue-dischi/" },
+  { name: "foryou-tally-app", link: "https://foryou.tally-app.com/" },
   { name: "angular-gorest-app", link: "https://angular-gorest-app.vercel.app/" },
   { name: "angular-news-app", link: "https://angular-news-app.vercel.app/" },
   { name: "react-vegetarian-recipes-app", link: "https://react-vegetarian-recipes-app.vercel.app/" },
