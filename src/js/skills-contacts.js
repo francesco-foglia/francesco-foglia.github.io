@@ -39,16 +39,16 @@ const skillsArray = [
     url: "https://angular.io"
   },
   {
+    name: "react",
+    url: "https://react.dev"
+  },
+  {
     name: "nextjs",
     url: "https://nextjs.org"
   },
   {
     name: "solidjs",
     url: "https://www.solidjs.com"
-  },
-  {
-    name: "react",
-    url: "https://react.dev"
   },
   {
     name: "vuejs",
