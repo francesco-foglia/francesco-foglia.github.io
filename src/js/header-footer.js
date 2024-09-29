@@ -1,5 +1,7 @@
 // Animate On Scroll Library
-AOS.init();
+AOS.init({
+  once: true,
+});
 
 // Create constants to store HTML elements.
 const headerNav = document.getElementById("header-nav");
