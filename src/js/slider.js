@@ -20,6 +20,7 @@ const swiperSlide = [
   { name: "eticoshop", link: "https://eticoshop.it/" },
   { name: "blueline-investments", link: "https://www.blueline-investments.com/" },
   { name: "minetuscany", link: "https://www.minetuscany.com/" },
+  { name: "ollocat", link: "https://cat.ollo.it/" },
 
   // { name: "js-counter-app", link: "https://francesco-foglia.github.io/js-counter-app/" },
   // { name: "js-cities-app", link: "https://francesco-foglia.github.io/js-cities-app/" },
