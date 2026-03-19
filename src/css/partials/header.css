@@ -1,0 +1,36 @@
+.header-lg {
+  height: 4rem;
+  background-color: #27252C;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(103, 80, 164, 0.2);
+
+  position: fixed;
+  top: 0;
+  bottom: unset;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+#header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+#header-nav a {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.08rem;
+  color: var(--primary-color);
+  transition: color 0.2s ease;
+}
+
+#header-nav a:hover {
+  color: var(--secondary-light);
+}
+
+#header-nav a span {
+  padding-right: 0.15rem;
+}

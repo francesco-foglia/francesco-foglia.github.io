@@ -1,0 +1,57 @@
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.5rem var(--surface-variant);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: 0.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: var(--primary-color);
+  background-color: var(--bg-dark);
+  letter-spacing: 0.02rem;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: clamp(0.05rem, 1vw, 0.15rem);
+  text-align: center;
+  font-size: clamp(1.2rem, 8vw, 3rem);
+}
+
+p {
+  line-height: 1.7 !important;
+}
+
+small {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--on-surface);
+  font-size: 0.7rem;
+  margin-top: 0.25rem;
+}
