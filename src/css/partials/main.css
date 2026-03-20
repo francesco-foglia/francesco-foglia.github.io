@@ -22,9 +22,6 @@
   }
 }
 
-#developer {
-  background-color: var(--bg-dark);
-}
 
 #developer .overlay h1 a:first-child {
   font-family: "Syne", sans-serif;
@@ -59,9 +56,6 @@
   font-size: 1.1rem;
 }
 
-#skills {
-  background-color: var(--bg-alt);
-}
 
 #skills .overlay #resume {
   display: flex;
@@ -83,9 +77,6 @@
   font-weight: 500;
 }
 
-#projects {
-  background-color: var(--bg-dark);
-}
 
 #projects .overlay p {
   text-align: center;
@@ -100,9 +91,6 @@
   opacity: 0.8;
 }
 
-#contacts {
-  background-color: var(--bg-alt);
-}
 
 #contacts .overlay p {
   margin-top: 4.5rem;

@@ -1,0 +1,81 @@
+/* Background Elements Style */
+.background-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  background-color: var(--bg-dark);
+}
+
+.shape {
+  position: absolute;
+  filter: blur(var(--shape-blur));
+  opacity: 0.4;
+  border-radius: 50%;
+  animation: float 20s infinite ease-in-out;
+}
+
+.shape-1 {
+  width: 40vw;
+  height: 40vw;
+  background-color: var(--shape-cyan);
+  top: -10%;
+  left: -10%;
+  animation-duration: 25s;
+}
+
+.shape-2 {
+  width: 35vw;
+  height: 35vw;
+  background-color: var(--shape-magenta);
+  bottom: -5%;
+  right: -5%;
+  animation-duration: 30s;
+  animation-delay: -5s;
+}
+
+.shape-3 {
+  width: 25vw;
+  height: 25vw;
+  background-color: var(--shape-yellow);
+  top: 40%;
+  right: 15%;
+  animation-duration: 22s;
+  animation-delay: -10s;
+}
+
+.shape-4 {
+  width: 30vw;
+  height: 30vw;
+  background-color: var(--shape-lime);
+  bottom: 20%;
+  left: 10%;
+  animation-duration: 28s;
+  animation-delay: -15s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  33% {
+    transform: translate(5%, 10%) rotate(10deg) scale(1.1);
+  }
+  66% {
+    transform: translate(-5%, 5%) rotate(-10deg) scale(0.9);
+  }
+}
+
+/* Ensure content overlays are not hiding the background too much */
+.overlay {
+  background: transparent !important;
+}
+
+/* Adjust section backgrounds if any were explicitly set */
+section {
+  background-color: transparent !important;
+  background-image: none !important;
+}

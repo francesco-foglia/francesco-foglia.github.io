@@ -4,12 +4,19 @@
   --secondary-color: #6750A4;       /* MD3 Primary (violet) */
   --secondary-light: #D0BCFF;       /* MD3 Primary container / accent */
   --tertiary-color: #1C1B1F;        /* MD3 Background / On-background */
-  --bg-dark: #1C1B1F;               /* Main background (odd sections) */
-  --bg-alt: #211F26;                /* Alt background (even sections) */
-  --surface-variant: #49454F;       /* Surface variant (dividers, borders) */
-  --on-surface: #CAC4D0;            /* Subtle text / secondary text */
-  --error-color: #CF6679;           /* MD3 Error */
-  
+  --bg-dark: #0b0b0f;               /* Main background (matte dark) */
+  --bg-alt: #0b0b0f;                /* Keep consistent with main bg */
+  --surface-variant: #1a1a1f;       /* Darker surface variant */
+  --on-surface: #8e8e93;            /* More subtle text */
+  --error-color: #ff453a;           /* Vivid error color */
+
+  /* Abstract Shape Colors */
+  --shape-cyan: #00d2ff;
+  --shape-magenta: #ff00ff;
+  --shape-yellow: #ffff00;
+  --shape-lime: #32cd32;
+  --shape-blur: 40px;
+
   /* Additional colors derived from SCSS functions */
   --secondary-color-lighten-8: #7c67b3; /* Pre-calculated lighten(#6750A4, 8%) */
 }
